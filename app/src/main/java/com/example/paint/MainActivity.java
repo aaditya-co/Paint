@@ -331,18 +331,9 @@ public class MainActivity extends Activity {
         canvas.drawBitmap(b2, 0, 0, null);
     }
 
-    public void setEraserType(View v){
-        pw.setVisibility(View.INVISIBLE);
-        pw = findViewById(R.id.eraserLayout);
-        pw.setVisibility(View.VISIBLE);
-    }
 
-    public void shapeOrPen(View v){
-        i.setAlpha((float) 0.1);
-//        pw.setVisibility(View.INVISIBLE);
-        pw = findViewById(R.id.shapeOrPenLayout);
-        pw.setVisibility(View.VISIBLE);
-    }
+
+
 
     public void chooseShape(){
 //        pw.setVisibility(View.INVISIBLE);
@@ -350,12 +341,7 @@ public class MainActivity extends Activity {
         pw.setVisibility(View.VISIBLE);
     }
 
-    public void goBack(View v) {
-        i.setAlpha((float) 0.1);
-        pw.setVisibility(View.INVISIBLE);
-        pw = findViewById(R.id.goBackLayout);
-        pw.setVisibility(View.VISIBLE);
-    }
+
 
     public void chooseFill(View v){
         penMode = Config.PenType.SHAPE_FILL;
@@ -365,14 +351,6 @@ public class MainActivity extends Activity {
     public void chooseStroke(View v){
         penMode = Config.PenType.SHAPE_STROKE;
         chooseShape();
-    }
-
-
-
-    public void fillOrStroke(View v) {
-//        pw.setVisibility(View.INVISIBLE);
-        pw = findViewById(R.id.fillOrStrokeLayout);
-        pw.setVisibility(View.VISIBLE);
     }
 
     public void setColor(View view){
@@ -475,14 +453,14 @@ public class MainActivity extends Activity {
         i.setAlpha((float) 1);
     }
 
-    public void loadImage(View v) {
-
-        Intent i = new Intent(
-                Intent.ACTION_PICK,
-                android.provider.MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
-
-        startActivityForResult(i, 1);
-    }
+//    public void loadImage(View v) {
+//
+//        Intent i = new Intent(
+//                Intent.ACTION_PICK,
+//                android.provider.MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
+//
+//        startActivityForResult(i, 1);
+//    }
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
@@ -526,106 +504,6 @@ public class MainActivity extends Activity {
         pw.setVisibility(View.GONE);
     }
 
-//    public void goHome(View v){
-//        Intent k = new Intent(this, HomeScreen.class);
-//        startActivity(k);
-//
-//    }
 
-    public void setBGToWhite(View v){
-        c.drawColor(ContextCompat.getColor(this, R.color.white));
-        pw.setVisibility(View.GONE);
-        bgColor = ContextCompat.getColor(this, R.color.white);
-    }
-
-    public void setBGToLGrey(View v){
-        c.drawColor(ContextCompat.getColor(this, R.color.lgrey));
-        pw.setVisibility(View.GONE);
-        bgColor = ContextCompat.getColor(this, R.color.lgrey);
-    }
-
-    public void setBGToGray(View v){
-        c.drawColor(ContextCompat.getColor(this, R.color.gray));
-        pw.setVisibility(View.GONE);
-        bgColor = ContextCompat.getColor(this, R.color.gray);
-    }
-
-    public void setBGToDGrey(View v){
-        c.drawColor(ContextCompat.getColor(this, R.color.dgrey));
-        pw.setVisibility(View.GONE);
-        bgColor = ContextCompat.getColor(this, R.color.dgrey);
-    }
-
-    public void setBGToBlack(View v){
-        c.drawColor(ContextCompat.getColor(this, R.color.black));
-        pw.setVisibility(View.GONE);
-        bgColor = ContextCompat.getColor(this, R.color.black);
-    }
-
-    public void setBGToDPurple(View v){
-        c.drawColor(ContextCompat.getColor(this, R.color.dpurple));
-        pw.setVisibility(View.GONE);
-        bgColor = ContextCompat.getColor(this, R.color.dpurple);
-    }
-
-    public void setBGToBlue(View v){
-        c.drawColor(ContextCompat.getColor(this, R.color.blue));
-        pw.setVisibility(View.GONE);
-        bgColor = ContextCompat.getColor(this, R.color.blue);
-    }
-
-    public void setBGToSBlue(View v){
-        c.drawColor(ContextCompat.getColor(this, R.color.sblue));
-        pw.setVisibility(View.GONE);
-        bgColor = ContextCompat.getColor(this, R.color.sblue);
-    }
-
-    public void setBGToLBlue(View v){
-        c.drawColor(ContextCompat.getColor(this, R.color.lblue));
-        pw.setVisibility(View.GONE);
-        bgColor = ContextCompat.getColor(this, R.color.lblue);
-    }
-
-    public void setBGToGreen(View v){
-        c.drawColor(ContextCompat.getColor(this, R.color.green));
-        pw.setVisibility(View.GONE);
-        bgColor = ContextCompat.getColor(this, R.color.green);
-    }
-
-    public void setBGToDGreen(View v){
-        c.drawColor(ContextCompat.getColor(this, R.color.dgreen));
-        pw.setVisibility(View.GONE);
-        bgColor = ContextCompat.getColor(this, R.color.dgreen);
-    }
-
-    public void setBGToDRed(View v){
-        c.drawColor(ContextCompat.getColor(this, R.color.red));
-        pw.setVisibility(View.GONE);
-        bgColor = ContextCompat.getColor(this, R.color.red);
-    }
-
-    public void setBGToRed(View v){
-        c.drawColor(ContextCompat.getColor(this, R.color.dred));
-        pw.setVisibility(View.GONE);
-        bgColor = ContextCompat.getColor(this, R.color.dred);
-    }
-
-    public void setBGToOrange(View v){
-        c.drawColor(ContextCompat.getColor(this, R.color.orange));
-        pw.setVisibility(View.GONE);
-        bgColor = ContextCompat.getColor(this, R.color.orange);
-    }
-
-    public void setBGToYellow(View v){
-        c.drawColor(ContextCompat.getColor(this, R.color.yellow));
-        pw.setVisibility(View.GONE);
-        bgColor = ContextCompat.getColor(this, R.color.yellow);
-    }
-
-    public void setBGToLYellow(View v){
-        c.drawColor(ContextCompat.getColor(this, R.color.lyellow));
-        pw.setVisibility(View.GONE);
-        bgColor = ContextCompat.getColor(this, R.color.lyellow);
-    }
 
 }

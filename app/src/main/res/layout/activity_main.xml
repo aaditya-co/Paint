@@ -111,14 +111,7 @@
             android:onClick="setPolygon"
             android:text="🔺" />
 
-        <!--        <Button-->
-        <!--            android:id="@+id/button34"-->
-        <!--            android:layout_width="wrap_content"-->
-        <!--            android:layout_height="wrap_content"-->
-        <!--            android:layout_weight="1"-->
-        <!--            android:background="@android:color/transparent"-->
-        <!--            android:onClick="setText"-->
-        <!--            android:text="@string/Text" />-->
+
     </LinearLayout>
 
     <LinearLayout
@@ -278,14 +271,7 @@
             android:text="🖌"
             android:textSize="35dp"/>
 
-<!--        <Button-->
-<!--            android:id="@+id/button11"-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:layout_weight="1"-->
-<!--            android:background="@android:color/transparent"-->
-<!--            android:onClick="fillOrStroke"-->
-<!--            android:text="Shape" />-->
+
 
         <Button
             android:layout_width="wrap_content"
@@ -455,6 +441,8 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="414dp"
         android:layout_height="517dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
         app:layout_constraintBottom_toBottomOf="@id/lower_guideline"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
