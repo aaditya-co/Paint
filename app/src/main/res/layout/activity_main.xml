@@ -92,7 +92,7 @@
             android:layout_weight="1"
             android:background="@android:color/transparent"
             android:onClick="setCircle"
-            android:text="@string/Circle" />
+            android:text="⚫" />
 
         <Button
             android:layout_width="wrap_content"
@@ -100,7 +100,7 @@
             android:layout_weight="1"
             android:background="@android:color/transparent"
             android:onClick="setLine"
-            android:text="@string/Line" />
+            android:text="➖" />
 
         <Button
             android:layout_width="wrap_content"
@@ -109,7 +109,7 @@
             android:layout_weight="1"
             android:background="@android:color/transparent"
             android:onClick="setPolygon"
-            android:text="@string/Polygon" />
+            android:text="🔺" />
 
         <!--        <Button-->
         <!--            android:id="@+id/button34"-->
