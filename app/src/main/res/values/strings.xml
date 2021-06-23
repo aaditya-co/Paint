@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Paint</string>
+    <string name="Thickness_toast">"Use Slider To Adjust Size -@aaditya.co"</string>
+    <string name="Saved_toast">Image saved. Thanks For Using Our App. Share Your Feedback @aaditya.co</string>
+
+    <string name="Undo">Undo</string>
+    <string name="Redo">Redo</string>
+    <string name="erase">Erase</string>
+    <string name="clear">Clear</string>
+    <string name="Circle">Circle</string>
+    <string name="Line">Line</string>
+    <string name="Polygon">Polygon</string>
+    <string name="Pen">Pen</string>
+</resources>
