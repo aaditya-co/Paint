@@ -367,10 +367,7 @@ public class MainActivity extends Activity {
         chooseShape();
     }
 
-    public void undoOrRedo(View v) {
-        LayoutInflater inflater = (LayoutInflater) this.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-        pw = inflater.inflate(R.layout.undoredo_popup, (ViewGroup) findViewById(R.id.lower_constraint), true);
-    }
+
 
     public void fillOrStroke(View v) {
 //        pw.setVisibility(View.INVISIBLE);
