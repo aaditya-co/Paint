@@ -1,14 +1,32 @@
 # paint-Drawing-Apps-For-Kids
+![App_Logo](https://cdn140.picsart.com/362154715016201.png?type=webp&to=min&r=1024)
 
 
-<strong>Features</strong>
-<ul>
-<li>Create Drawings (Obvious one :P).</li>
-<li>Select different brush sizes.</li>
-<li>Select different Shapes (Fill & Stroke).</li>
-<li>One Click Clean Button</li>
-<li>Color pallet.</li>
-<li>Save drawings in Gallery.</li>
-</ul>
+## Features
 
-![screenshot_2015-09-06-07-00-34](https://cdn131.picsart.com/362149976048201.jpg?type=webp&to=min&r=1024)
+- Create Drawings (Obvious one :P)
+- Select different brush sizes.
+- Select different Shapes (Fill & Stroke).
+- One Click Clean Button
+- Color pallet.
+- Save drawings in Gallery.
+
+
+![screenshot](https://cdn131.picsart.com/362149976048201.jpg?type=webp&to=min&r=1024)
+
+
+
+## Feedback
+
+For Feedback, email adityarajlp@live.com or join Instagram [@aaditya.co](https://www.instagram.com/aaditya.co)
+
+  
+## Deployment
+
+To deploy this project open Android Studio and clone this Respositories
+
+```bash
+  git clone https://github.com/adityaraj3644/Paint.git
+```
+
+  
